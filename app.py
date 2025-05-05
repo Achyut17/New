@@ -211,7 +211,7 @@ st.markdown("""
 # Load and process the data
 @st.cache_data
 def load_data():
-    data = pd.read_csv("attached_assets/MrBeast_Full_Channel_Analytics_With_Titles.csv")
+    data = pd.read_csv("MrBeast_Full_Channel_Analytics_With_Titles.csv")
     
     # Convert date to datetime format
     data['Publish Date'] = pd.to_datetime(data['Publish Date'], format='%d-%m-%Y')
@@ -373,7 +373,7 @@ else:
 col1, col2 = st.columns([1, 6])
 with col1:
     # MrBeast logo (use a placeholder image if the remote image doesn't load)
-    st.image("attached_assets/image_1746410705102.png", width=80)
+    st.image("image_1746410705102.png", width=80)
 with col2:
     st.markdown("<div class='main-header'>MrBeast Channel Analytics Dashboard</div>", unsafe_allow_html=True)
     st.markdown("<div class='sub-header'>390,000,000 subscribers • 867 videos • 81,472,786,518 views</div>", unsafe_allow_html=True)
